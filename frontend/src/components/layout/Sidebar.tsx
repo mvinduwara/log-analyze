@@ -42,14 +42,15 @@ export function Sidebar() {
           style={{
             width: 30,
             height: 30,
-            background: "linear-gradient(135deg, var(--accent-cyan), var(--accent-purple))",
+            background: "#ffffff",
             borderRadius: 7,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <Zap size={15} color="#fff" fill="#fff" />
+
+          <Zap size={15} color="#000" fill="#000" />
         </div>
         <div>
           <div
