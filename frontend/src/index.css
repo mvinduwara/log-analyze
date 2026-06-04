@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --bg-base: #0a0b0e;
-  --bg-surface: #111318;
-  --bg-elevated: #1a1d26;
-  --bg-hover: #1f2330;
-  --border: #252836;
-  --border-bright: #353a4f;
-  --text-primary: #e8eaf0;
-  --text-secondary: #7c8099;
-  --text-muted: #4a4f66;
-  --accent-cyan: #00d4ff;
-  --accent-cyan-dim: rgba(0, 212, 255, 0.12);
-  --accent-green: #00ff88;
-  --accent-green-dim: rgba(0, 255, 136, 0.1);
-  --accent-amber: #ffb300;
-  --accent-amber-dim: rgba(255, 179, 0, 0.1);
-  --accent-red: #ff4466;
-  --accent-red-dim: rgba(255, 68, 102, 0.1);
-  --accent-purple: #a855f7;
-  --accent-purple-dim: rgba(168, 85, 247, 0.1);
+  --bg-base: #000000;
+  --bg-surface: #0a0a0a;
+  --bg-elevated: #111111;
+  --bg-hover: #1a1a1a;
+  --border: #222222;
+  --border-bright: #333333;
+  --text-primary: #ffffff;
+  --text-secondary: #999999;
+  --text-muted: #555555;
+  --accent-cyan: #ffffff;
+  --accent-cyan-dim: rgba(255, 255, 255, 0.08);
+  --accent-green: #ffffff;
+  --accent-green-dim: rgba(255, 255, 255, 0.06);
+  --accent-amber: #cccccc;
+  --accent-amber-dim: rgba(200, 200, 200, 0.08);
+  --accent-red: #888888;
+  --accent-red-dim: rgba(150, 150, 150, 0.08);
+  --accent-purple: #aaaaaa;
+  --accent-purple-dim: rgba(170, 170, 170, 0.08);
   --font-display: "Syne", sans-serif;
   --font-mono: "Space Mono", monospace;
 }
