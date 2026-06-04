@@ -1,0 +1,17 @@
+{
+  "name": "log-analyzer",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "npm -w frontend run dev",
+    "dev:backend": "npm -w backend run dev",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build": "npm -w frontend run build && npm -w backend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}

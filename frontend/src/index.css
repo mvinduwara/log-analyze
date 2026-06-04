@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base: #0a0b0e;
+  --bg-surface: #111318;
+  --bg-elevated: #1a1d26;
+  --bg-hover: #1f2330;
+  --border: #252836;
+  --border-bright: #353a4f;
+  --text-primary: #e8eaf0;
+  --text-secondary: #7c8099;
+  --text-muted: #4a4f66;
+  --accent-cyan: #00d4ff;
+  --accent-cyan-dim: rgba(0, 212, 255, 0.12);
+  --accent-green: #00ff88;
+  --accent-green-dim: rgba(0, 255, 136, 0.1);
+  --accent-amber: #ffb300;
+  --accent-amber-dim: rgba(255, 179, 0, 0.1);
+  --accent-red: #ff4466;
+  --accent-red-dim: rgba(255, 68, 102, 0.1);
+  --accent-purple: #a855f7;
+  --accent-purple-dim: rgba(168, 85, 247, 0.1);
+  --font-display: "Syne", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-bright);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.3); }
+  50% { box-shadow: 0 0 0 6px rgba(0, 212, 255, 0); }
+}
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.fade-in { animation: fadeIn 0.4s ease both; }
+.fade-in-1 { animation: fadeIn 0.4s 0.05s ease both; }
+.fade-in-2 { animation: fadeIn 0.4s 0.1s ease both; }
+.fade-in-3 { animation: fadeIn 0.4s 0.15s ease both; }
+.fade-in-4 { animation: fadeIn 0.4s 0.2s ease both; }
+.fade-in-5 { animation: fadeIn 0.4s 0.25s ease both; }
+
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-elevated) 25%, var(--bg-hover) 50%, var(--bg-elevated) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
